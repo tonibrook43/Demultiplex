@@ -16,19 +16,23 @@
 # Write examples (unit tests!)
 Include four properly formatted input FASTQ files with read pairs that cover all three categories (dual matched, index-hopped, unknown index)
 Include the appropriate number of properly formatted output FASTQ files given your input files
+    a. Known Indexes for test files:
+        TT
+        CC
+        AC
 - 4 FASTQ input files: 
-1294_S1_L008_R1_001.fastq.gz
-1294_S1_L008_R2_001.fastq.gz
-1294_S1_L008_R3_001.fastq.gz
-1294_S1_L008_R4_001.fastq.gz
+test_input_R1.fq.gz
+test_input_R2.fq.gz
+test_input_R3.fq.gz
+test_input_R4.fq.gz
 
 -6 FASTQ output files examples:
-A8.R1.fq.gz
-A8.R2.fq.gz
+AA.R1.fq.gz
+AA.R2.fq.gz
 unknown.R1.fq.gz
 unknown.R2.fq.gz
-swapped.I1.fq.gz
-swapped.I2.fq.gz
+hopped.R1.fq.gz
+hopped.R2.fq.gz
 
 
 # Develop your algorithm using pseudocode
