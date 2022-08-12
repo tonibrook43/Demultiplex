@@ -1,5 +1,5 @@
 
-FASTQ files used for demultiplexing found in /projects/bgmp/shared/2017_sequencing/*:
+--- FASTQ files used for demultiplexing found in /projects/bgmp/shared/2017_sequencing/*: ---
 
 1294_S1_L008_R1_001.fastq.gz
 
@@ -9,6 +9,7 @@ FASTQ files used for demultiplexing found in /projects/bgmp/shared/2017_sequenci
 
 1294_S1_L008_R4_001.fastq.gz
 
+--- File Statistics ---
 
 Quality Score cutoff= 30
 
@@ -31,7 +32,7 @@ Percent of Hopped Reads= 0.09111575359376596
 Percent of Unknown Reads= 37.49521878014953
 
 
-Matched and Hopped Products from read 1 and read 2 and how many times they appeared:
+-------Matched and Hopped Products from read 1 and read 2 and how many times they appeared: -------
 
 2577666	('CACTTCAC', 'CACTTCAC')
 
