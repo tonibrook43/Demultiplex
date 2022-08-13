@@ -72,11 +72,6 @@ def onelinefasta(fasta_file, output_file):
         fasta_output.write(''.join(x) + '\n')
     pass
 
-def (base_seq):
-    """"Return the percentage of G and C characters in base_seq"""
-    seq = base_seq.upper()
-    return (seq.count('G') + seq.count('C')) / len(seq)
-
 if __name__ == "__main__":
     assert gc_content("GCGCGC") == 1
     assert gc_content("AATTATA") == 0
@@ -91,6 +86,6 @@ if __name__ == "__main__":
     print("Correctly identified a DNA string")
     assert validate_DNA_seq("Hi there!") == False, "Non-DNA identified as DNA"
     print("Correctly determined non-DNA")
-pass
+    pass
 
 #Most functions pulled from lecture notes#
