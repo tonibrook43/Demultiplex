@@ -23,17 +23,12 @@ file1= gzip.open("/projects/bgmp/shared/2017_sequencing/1294_S1_L008_R1_001.fast
 file2= gzip.open("/projects/bgmp/shared/2017_sequencing/1294_S1_L008_R2_001.fastq.gz", "rt")
 file3= gzip.open("/projects/bgmp/shared/2017_sequencing/1294_S1_L008_R3_001.fastq.gz", "rt")
 file4= gzip.open("/projects/bgmp/shared/2017_sequencing/1294_S1_L008_R4_001.fastq.gz", "rt")
-# file1= open("/projects/bgmp/tonib/bioinfo/Bi622/Demultiplex/Assignment-the-third/Unit_Tests/test_input_R1.fq", "r")
-# file2= open("/projects/bgmp/tonib/bioinfo/Bi622/Demultiplex/Assignment-the-third/Unit_Tests/test_input_R2.fq", "r")
-# file3= open("/projects/bgmp/tonib/bioinfo/Bi622/Demultiplex/Assignment-the-third/Unit_Tests/test_input_R3.fq", "r")
-# file4= open("/projects/bgmp/tonib/bioinfo/Bi622/Demultiplex/Assignment-the-third/Unit_Tests/test_input_R4.fq", "r")
 
 
 
 index_txt= open("/projects/bgmp/shared/2017_sequencing/indexes.txt", "r") 
-#index_txt=open("/projects/bgmp/tonib/bioinfo/Bi622/Demultiplex/Assignment-the-third/Unit_Tests/known_indexes.fq", "r")
-index_set= set() ## just kiddding -- make a loop to fill this set-- google how to import set()
-rec_dict={} #this will have my 
+index_set= set() 
+rec_dict={} 
 base_dict={"A":"T", "T":"A", "G":"C", "C":"G", "N":"N"}
 count_matched_dict={"matched": 0}
 count_unknown_dict_r2={"unknown_r2": 0} #creating a dictionary for unknown indexes in r2 -- used to make a count for unknown + low qs
