@@ -6,8 +6,7 @@
 #   - https://python101.pythonlibrary.org/chapter36_creating_modules_and_packages.html
 #   - and many more: https://www.google.com/search?q=how+to+write+a+python+module
 
-'''This module is a collection of useful bioinformatics functions written during the Bioinformatics and Genomics Program coursework.
-You should update this docstring to reflect what you would like it to say'''
+'''This module is a collection of useful bioinformatics functions written during the Bioinformatics and Genomics Program coursework.'''
 
 __version__ = "0.2"         # Read way more about versioning here:
                             # https://en.wikipedia.org/wiki/Software_versioning
@@ -30,7 +29,7 @@ def convert_phred(letter: str) -> int:
     return phred_score_int
 
 def qual_score(phred_score: str) -> float:
-    """Write your own doc string"""
+    """Takes a phred score and converts it to a quality score"""
     sum=0
     for letter in phred_score:
         sum += (convert_phred(letter))
@@ -88,4 +87,3 @@ if __name__ == "__main__":
     print("Correctly determined non-DNA")
     pass
 
-#Most functions pulled from lecture notes#
